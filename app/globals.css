@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+/* Tokens inspirados no Lucky DS (ShadCN). Valores aproximados para protótipo. */
+:root {
+  --background: #fafafa;
+  --foreground: #262626;
+  --card: #fafafa;
+  --muted: #f4f4f5;
+  --muted-foreground: #737373;
+  --border: #e5e5e5;
+  --primary: #ee3124;
+  --primary-foreground: #fafafa;
+  --accent: #fde8e7;
+  --accent-foreground: #262626;
+  --success: #2f6b2a;
+  --success-foreground: #fafafa;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-border: var(--border);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-success: var(--success);
+  --color-success-foreground: var(--success-foreground);
+  --font-sans: "Axiforma", "Inter", ui-sans-serif, system-ui, sans-serif;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+}
+
+/* Tema escuro (aplicar classe .dark no <html>) */
+.dark {
+  --background: #0a0a0a;
+  --foreground: #fafafa;
+  --card: #171717;
+  --muted: #262626;
+  --muted-foreground: #a3a3a3;
+  --border: #2e2e2e;
+  --primary: #ef4136;
+  --primary-foreground: #fafafa;
+  --accent: #3f1d1b;
+  --accent-foreground: #fafafa;
+  --success: #2f6b2a;
+  --success-foreground: #fafafa;
+}
